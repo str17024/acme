@@ -9,23 +9,24 @@
   <meta name="the official page Acme." content="TheAcmeTest site">
  	
 	
-	
-  <!-- external style references in the proper cascading order -->    
+<!-- test to see if modules work 	-->
+<!--?php include $_SERVER['DOCUMENT_ROOT']'/modules/header.php'; ?-->  
+ 
+    <!-- external style references in the proper cascading order   -->
   <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">  <!-- Google API font reference -->
   <link href="/css/-normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
-  <link href="main.css"rel="stylesheet">   <!-- default styles - small/phone views -->
+  <link href="main.css" rel="stylesheet">   <!-- default styles - small/phone views -->
   <link href="/css/-medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
   <link href="/css/-large-5.css" rel="stylesheet">   <!-- large/wide/desktop views -->
   <link href="/css/-small.css" rel="stylesheet">   <!-- small views --> 	
 </head>
+    
 <body>
-
-  
     
     
 <header>
     	  
-    <img src="images/site/logo.gif" alt="ACME Buy Here. Eat Here" width="20%" height="70em" >
+    <img src="images/site/logo.gif" alt="ACME Buy Here. Eat Here" width="6" height="3" >
     <h1>ACME Test Site Ken S....</h1>
     <div class="subheading">Kaboom!</div>
 	
@@ -33,21 +34,16 @@
 
   <!-- site navigation use placeholder references -->
 	
-</br>
-</br>
-</br>
-</br>
+
 
   <nav class="topnavacme">
-   <!-- <button onclick="toggleMenu()">&#9776;</button>
-	 <ul id="topnavacme" class="hide"> -->
-      <li><a class="active" href="https://str17024.github.io/acme/">Home</a></li>
-	  <li><a href="acmerocket.html">Acme Rocket</a></li>
-	  <li><a href="quicklightingfuse.html">Quick Lighting Fuse</a></li>
-	  <li><a href="NHTSAapprovedseatbelts.html">NHTSA approved Seat Belts</a></li>
-	  <li><a href="mobilelaunchstandincluded.html">Mobile Launch Stand Included</a></li>
-	  <li><a href="contactus.html">Contact Us</a></li>
-         </ul>
+   
+      <a class="active" href="https://str17024.github.io/acme/">Home</a>
+	  <a href="acmerocket.html">Acme Rocket</a>
+	  <a href="quicklightingfuse.html">Quick Lighting Fuse</a>
+	  <a href="NHTSAapprovedseatbelts.html">NHTSA approved Seat Belts</a>
+	  <a href="mobilelaunchstandincluded.html">Mobile Launch Stand Included</a>
+	  <a href="contactus.html">Contact Us</a>
       <a href="/acme/cart/"><img id="actionbtn" alt="Add to cart button" src="/images/site/iwantit.gif"></a>
 </nav>		
     
@@ -60,13 +56,10 @@
     <h2 text-align="center">The Acme Test Page Kens</h2>
 	  
 	  
-</br>
-</br>
-</br>
-</br>
+
 <div class="weathersummary">
     <div class="franklinimage">
-      <img src="images/site/rocketfeature.jpg" alt="Therocketfeatureone" width="100%">
+      <img src="images/site/rocketfeature.jpg" alt="Therocketfeatureone">
     </div>
       <aside class="sidebar1">
       <h3 >Bike Adventures!</h3>   
@@ -99,31 +92,22 @@
       </div>           
     
 
-
-
-
-
-
-
-
-
-
-      
+ 
 
 
 <div>
 
 
 </div>
- </main>
+</main>
     
-</br>
-</br>
-</br>
-</br>
+
 <p>
+    
 </body>
+    
  <footer>
+     
             <aside>
                 3950 Valley Commons Drive<br>
                 Dayton, OH 12321<br>
@@ -132,7 +116,7 @@
             </aside>
             <p class="footer-bar">&copy; ACME, All rights reserved.
 All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed. <span id="currentdate"></span></p>
-        </footer>
+</footer>
 
   
 
@@ -141,7 +125,7 @@ All images used are believed to be in "Fair Use". Please notify the author if an
   <script src="/js/jquery.min.js"></script>
   <script src="/js/currentdate.js"></script>
   <script src="/js/windchill.js"></script>
-  <script src="/js/windchill2.js"></script>
+
 
 
     
