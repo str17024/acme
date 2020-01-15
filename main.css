@@ -2,17 +2,18 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-body {
+div.body {
   font-size: 16px;
-  background-color: ;
+  background-color: #ffffff;
   margin:0;
   padding:0;
-  font-family: arial, helvetica, sans-serif
+  overflow: auto;
+  font-family: arial, helvetica, sans-serif;
 
   /* Declare the base font-family - from google font api or other */
 }
 
-header, main, footer {     
+header{     
    color: 0000ee;
    background-color: de2226;
    margin-left: 0 auto;
@@ -30,6 +31,16 @@ header {
     align-items: center;
     align-content: center;
 
+}
+
+main {
+    background-image: url(images/site/rocketfeature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    overflow: auto;
+    padding-bottom: 1em;
+    
 }
 
 nav button {
@@ -110,7 +121,7 @@ header .subheading {
     
 }
 
-.weathersummary{
+.acmesummary{
     font-size: 1.6em;
     display: flex;
     border: none;
@@ -122,10 +133,21 @@ header .subheading {
 
 }
 
-.highlow{
-    align-self: center;
+.acmerocketfloat{
+    padding-right: 2em;
+    float: right;
     flex-direction: column;
+    text-align: center;
+    color: crimson;
+    font-size: 2em;
     
+}
+
+.acmereviewsfloat{
+    float: right;
+    flex-direction: column;
+    font-size: 2em;
+    padding-right: 2em;
 }
 
 .sidebar1{
@@ -138,18 +160,13 @@ header .subheading {
     
 
 
-.franklinimage {
+.acmeimage {
     height: 100%;
-    width: 50%;
-    
-    
+    width: 100%;
     }
 
-main {
-   border-size: 2px;
-   border-style: solid;
     
-}
+
 main h2 {
     display: flex;
     font-size: 2.5rem;
@@ -196,20 +213,18 @@ h3 {
     text-align: center;
 }
 
-main article p.town-article, p.w-story {
-    padding: 0 1em 1em;
-    word-spacing: 0.2rem;
-    margin-bottom: 0;
-}
 
 
-footer {
+div.footer {
     background-color: #808080;
     color: #000000;
-    font-size: 0.5em;
+    font-size: 1.5em;
     text-align: center;
     margin-top: 1.5em;
-    padding: 1em 0 1em 0;
+    padding: 1em 1em 1em 1em;
+    position: relative;
+    clear:both;
+    
 }
 
 
@@ -262,7 +277,7 @@ form label span {
 
 /* Add a black background color to the top navigation */
 .topnavacme {
-  background-color: #333;
+  background-color: #de2226;
   overflow: hidden;
 }
 
@@ -278,14 +293,44 @@ form label span {
 
 /* Change the color of links on hover */
 .topnavacme a:hover {
-  background-color: #ddd;
+  background-color: #de2226;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnavacme a.active {
-  background-color: #4CAF50;
+  background-color: #808080;
   color: white;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 1em;
+  float: left;
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  padding: 2em;    
+}
+
+div.gallery img {
+  width: auto;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.spacer {
+    padding-top: 4em;
+    text-decoration-color: #fff;
+    
+    
 }
 
 /* Other Class Selectors */
