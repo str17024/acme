@@ -328,6 +328,11 @@ div.desc {
   text-align: center;
 }
 
-
+div.recipies {
+    text-align: left;
+    padding-left: 14em;
+    font-size: 2em;
+    
+}
 
 /* Other Class Selectors */
