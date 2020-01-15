@@ -34,7 +34,7 @@ header {
 }
 
 main {
-    background-image: url(images/site/rocketfeature.jpg);
+    background-image: url(../images/site/rocketfeature.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
