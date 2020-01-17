@@ -2,30 +2,29 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-div.body {
-  font-size: 16px;
-  background-color: #ffffff;
-  margin:0;
-  padding:0;
-  overflow: auto;
-  font-family: arial, helvetica, sans-serif;
+body, html {
+  height:100%
 
-  /* Declare the base font-family - from google font api or other */
+}
+
+div.bg{
+    background-image: url(../images/site/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header{     
-   color: 0000ee;
-   background-color: de2226;
+   color: #0000ee;
+   background-color: #de2226;
    margin-left: 0 auto;
    margin-right: 0 auto;
    width: 100%;
-  /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+
 }
 
 header {
     
-    background-color: #0000ee; 
+    background-color: #ffffff; 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -33,13 +32,21 @@ header {
 
 }
 
+div.acmelogo {
+    float: left;
+    height: 100%;
+    width: 100%;
+    
+}
+
 main {
     background-image: url(../images/site/rocketfeature.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     height: 500px;
     overflow: auto;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     
 }
 
@@ -54,41 +61,7 @@ nav button {
     right: 2%;
 }
 
-nav {
-    margin: 1em 0.1em;
-    background-color: #990033;
-    
-    }
-    
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #990033;
-     
-}
 
-nav ul li a {
-    display: flex;
-    color: #ffffff;
-    text-align: center;
-    justify-content: center;
-    padding: 0.6rem 2rem;
-    text-decoration: none;
-}
-
-nav ul li.active a {
-    background-color: rgba(0,0,0,2);
-}
-
-nav ul li a:hover {
-    background-color: #052d84;
-}
-
-nav ul.hide {
-    display: none;
-}
 
 h1 {
     display: flex;
@@ -108,16 +81,16 @@ header img {
 }
 h2 {
     
-    color: khaki;
-    text-decoration-line: underline;
+    color: #000000;
     font-size:  1.4rem ;
     text-align: center;
     
 }
-header .subheading {
+header .myaccount {
     display: flex;
-    font-size: 1.2rem;
-    color: #a72170;
+    font-size: 1.6em;
+    padding: 1em;
+    color: #de2226;
     
 }
 
@@ -144,6 +117,7 @@ header .subheading {
 }
 
 .acmereviewsfloat{
+    display: flex;
     float: right;
     flex-direction: column;
     font-size: 2em;
@@ -176,38 +150,7 @@ main h2 {
     
 }
 
-thead {color:black;
-    background-color: #7fb989;
-    font-size: 20px;
-    font-weight: bold;
-    }
-    
-.row1 {
-    color:white;
-    background-color: #99cc00;
-    font-size: 20px;
-    font-weight: bold;
-}
-          
-      
-tr:nth-child(2n+2) {
-    color:black;
-    background-color: #e7f0ed;
-    text-align: center;
-    }
 
-tr:nth-child(2n+3) {
-    color:black;
-    background-color: #e7ffed;
-    text-align: center;
-    
-    }
-
-.googlemaps{
-    text-align: center;
-    justify-content: center;
-    
-}
 
 h3 {
     text-align: center;
@@ -216,10 +159,12 @@ h3 {
 
 
 footer {
-    background-color: #808080;
+    background-color: #ffffff;
     color: #000000;
     font-size: 1.5em;
     text-align: center;
+    border-top: 0.5em;
+    border-top-style: solid;
     margin-top: 1.5em;
     padding: 1em 1em 1em 1em;
     position: relative;
@@ -229,54 +174,11 @@ footer {
 
 
 
-#franklinevents {
-    justify-content: center;
-    display: flex;
-    background-color: grey;
-    
-}
-
-
-form#w-form {
-    text-align: center;
-    margin-top: 1em; 
-    padding: 0.5em 1em;
-    background-color: yellowgreen;
-}
-
-form fieldset {
-    margin: 1.2em auto;
-    border-radius: 9px;
-}
-
-form legend {
-    color: #ffffff;
-    margin-left: 5%;
-    padding: 0.6em;
-    border: 3px solid black;
-    background-color: #55a6ff;
-    border-radius: 0.6em;
-    
-    font-size: 1.2em;
-}
-
-form label {
-    justify-content: center;
-    align-content: center;
-    display: block;
-    margin: .9em;
-}
-
-form label span {
-    display: block;
-    padding-top: 0.9em;
-    padding-bottom: 0.2em;  
-    font-style: oblique;
-    font-size: 0.9em;
-}
-
 /* Add a black background color to the top navigation */
 .topnavacme {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   background-color: #de2226;
   overflow: hidden;
 }
@@ -291,7 +193,7 @@ form label span {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
+/* Change the acme color of links on hover */
 .topnavacme a:hover {
   background-color: #de2226;
   color: black;
@@ -304,33 +206,47 @@ form label span {
 }
 
 div.gallery {
+  display: flex;
+  height: 250px;
+  width: 200px;
+  flex-grow: 2;
+  flex-direction: row;
+  flex: auto;
+  flex-wrap: wrap;
+  float: left;
   margin: 5px;
   border: 1px solid #ccc;
   padding: 1em;
-  float: left;
   background-color: #808080;
-  overflow: hidden;
+  overflow: auto;
   
 }
 
 div.gallery:hover {
+  
+  float: left;
   border: 1px solid #777;
-  padding: 2em;    
+  padding: 2em;
+  overflow: auto;
 }
 
-div.gallery img {   
-  width: 225px;
-  height: 225px;
+div.gallery img { 
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 div.desc {
+  font-size: 1.5em;
   padding: 15px;
   text-align: center;
 }
 
 div.recipies {
-    text-align: left;
-    padding-left: 14em;
+    float: inherit;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     font-size: 2em;
     
 }
