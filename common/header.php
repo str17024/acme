@@ -1,3 +1,5 @@
+<!doctype html>
+<html lang="en-us">
 <header>
     	  
     <div class="acmelogo"> <img src="./images/site/logo.gif" alt="ACME Buy Here. Eat Here"> </div>
