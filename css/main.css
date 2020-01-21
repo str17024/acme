@@ -2,16 +2,16 @@
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-body, html {
-  height:100%
-
+body, html { 
+  height: 90%;
+  width: 100%;
+  background-image: url(../images/site/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-div.bg{
-    background-image: url(../images/site/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 
 header{     
    color: #0000ee;
@@ -205,8 +205,9 @@ footer {
   color: white;
 }
 
-div.gallery {
+div.recipesbox {
   display: flex;
+  flex-direction: column;
   height: 250px;
   width: 200px;
   flex-grow: 2;
@@ -222,7 +223,7 @@ div.gallery {
   
 }
 
-div.gallery:hover {
+div.recipesbox:hover {
   
   float: left;
   border: 1px solid #777;
@@ -230,8 +231,8 @@ div.gallery:hover {
   overflow: auto;
 }
 
-div.gallery img { 
-  align-items: center;
+div.recipesbox img { 
+  align-self: center; 
   width: 100%;
   height: 100%;
 }
@@ -242,7 +243,7 @@ div.desc {
   text-align: center;
 }
 
-div.recipies {
+div.recipiesheader {
     float: inherit;
     text-align: center;
     padding-top: 0.5em;
@@ -250,5 +251,9 @@ div.recipies {
     font-size: 2em;
     
 }
+
+
+
+
 
 /* Other Class Selectors */
